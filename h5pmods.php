@@ -41,6 +41,7 @@ if (!defined('WPINC')) {
  * @param int $majorVersion First part of the version number.
  * @param int $minorVersion Second part of the version number.
  */
+/*
 function h5pmods_alter_semantics(&$semantics, $name, $majorVersion, $minorVersion) {
   if ($name === 'H5P.Collage' && $majorVersion < 1) {
 
@@ -58,6 +59,7 @@ function h5pmods_alter_semantics(&$semantics, $name, $majorVersion, $minorVersio
   }
 }
 add_action('h5p_alter_library_semantics', 'h5pmods_alter_semantics', 10, 4);
+*/
 
 /**
  * Allows you to alter the parameters of H5P content after it has been filtered
@@ -72,6 +74,7 @@ add_action('h5p_alter_library_semantics', 'h5pmods_alter_semantics', 10, 4);
  * @param int $majorVersion First part of the version number.
  * @param int $minorVersion Second part of the version number.
  */
+/*
 function h5pmods_alter_parameters(&$parameters, $name, $majorVersion, $minorVersion) {
   if ($name === 'H5P.MultiChoice') {
     $parameters->question .= '<p>Generated at ' . time() . '.</p>';
@@ -90,6 +93,7 @@ add_action('h5p_alter_filtered_parameters', 'h5pmods_alter_parameters', 10, 4);
  * @param array $libraries The libraries which the scripts belong to.
  * @param string $embed_type Possible values are: div, iframe, external, editor.
  */
+/*
 function h5pmods_alter_scripts(&$scripts, $libraries, $embed_type) {
   if (isset($libraries['H5P.DragQuestion'])) {
     $scripts[] = (object) array(
@@ -100,6 +104,8 @@ function h5pmods_alter_scripts(&$scripts, $libraries, $embed_type) {
   }
 }
 add_action('h5p_alter_library_scripts', 'h5pmods_alter_scripts', 10, 3);
+*/
+
 
 /**
  * Allows you to alter which stylesheets are loaded for H5P. This is
@@ -115,8 +121,8 @@ add_action('h5p_alter_library_scripts', 'h5pmods_alter_scripts', 10, 3);
 function h5pmods_alter_styles(&$styles, $libraries, $embed_type) {
   $styles[] = (object) array(
     // Path can be relative to wp-content/uploads/h5p or absolute.
-    'path' => 'http://mydomain.org/custom-h5p-styling.css',
-    'version' => '?ver=1.3.7' // Cache buster
+    'path' => '../../../plugins/h5pmods-wordpress-plugin/custom-h5p.css',
+    //'version' => '?ver=1.1' // Cache buster
   );
 }
 add_action('h5p_alter_library_styles', 'h5pmods_alter_styles', 10, 3);
@@ -131,6 +137,7 @@ add_action('h5p_alter_library_styles', 'h5pmods_alter_styles', 10, 3);
  * @param int $content_id
  * @return bool New access permission
  */
+/*
 function h5pmods_embed_access($access, $content_id) {
   if ($content_id === '1') {
     $access = TRUE;
@@ -138,6 +145,7 @@ function h5pmods_embed_access($access, $content_id) {
   return $access;
 }
 add_filter('h5p_embed_access', 'h5pmods_embed_access', 10, 2);
+*/
 
 /**
  * Allows you to alter a user's score before it's saved, or you can use this
@@ -148,6 +156,7 @@ add_filter('h5p_embed_access', 'h5pmods_embed_access', 10, 2);
  * @param int $content_id Identifier of the H5P Content
  * @param int $user_id Identfieri of the User
  */
+/*
 function h5pmods_alter_user_result(&$data, $result_id, $content_id, $user_id) {
 
   // Here we can send the results data to another plugin, or we can make sure
@@ -157,3 +166,6 @@ function h5pmods_alter_user_result(&$data, $result_id, $content_id, $user_id) {
   }
 }
 add_filter('h5p_alter_user_result', 'h5pmods_alter_user_result', 10, 4);
+*/
+
+
