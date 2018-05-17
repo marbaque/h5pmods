@@ -21,7 +21,7 @@
  * License:           MIT
  * License URI:       http://opensource.org/licenses/MIT
  * Domain Path:       /languages
- * GitHub Plugin URI: https://github.com/h5p/h5pmods-wordpress-plugin
+ * GitHub Plugin URI: https://github.com/marbaque/h5pmods
  */
 
 // If this file is called directly, abort.
@@ -121,7 +121,7 @@ add_action('h5p_alter_library_scripts', 'h5pmods_alter_scripts', 10, 3);
 function h5pmods_alter_styles(&$styles, $libraries, $embed_type) {
   $styles[] = (object) array(
     // Path can be relative to wp-content/uploads/h5p or absolute.
-    'path' => '../../../plugins/h5pmods-wordpress-plugin/custom-h5p.css',
+    'path' => '../../../plugins/h5pmods/custom-h5p.css',
     'version' => '?ver=1.1' // Cache buster
   );
 }
