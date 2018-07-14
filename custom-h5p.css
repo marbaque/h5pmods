@@ -19,3 +19,6 @@ html.h5p-iframe, html.h5p-iframe div {
 	display: block;
 	
 }
+.h5p-accordion .h5p-panel-content {
+	padding: 1em;
+}
