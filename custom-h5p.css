@@ -15,3 +15,7 @@ html.h5p-iframe, html.h5p-iframe div {
 	padding-left: 90px;
 	min-height: 100px;
 }
+.h5p-essay .h5p-essay-solution-sample-text {
+	display: block;
+	
+}
