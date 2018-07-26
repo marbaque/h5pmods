@@ -22,3 +22,23 @@ html.h5p-iframe, html.h5p-iframe div {
 .h5p-accordion .h5p-panel-content {
 	padding: 1em;
 }
+
+
+.vco-storyjs .vco-feature h1, 
+.vco-storyjs .vco-feature h2, 
+.vco-storyjs .vco-feature h3, 
+.vco-storyjs .vco-feature h4, 
+.vco-storyjs .vco-feature h5, 
+.vco-storyjs .vco-feature h6 {
+	font-family: 'Helvetica', 'Arial', sans-serif!important;
+}
+
+.vco-storyjs h2.start {
+	font-size: 24px!important;
+	line-height: 1.2!important;
+}
+
+#h5p-timeline ul li {
+	line-height: 1.2;
+	margin-bottom: .5em;
+}
