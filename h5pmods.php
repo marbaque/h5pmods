@@ -122,7 +122,7 @@ function h5pmods_alter_styles(&$styles, $libraries, $embed_type) {
   $styles[] = (object) array(
     // Path can be relative to wp-content/uploads/h5p or absolute.
     'path' => '../../../plugins/h5pmods/custom-h5p.css',
-    'version' => '?ver=1.5' // Cache buster
+    'version' => '?ver=1.6' // Cache buster
   );
 }
 add_action('h5p_alter_library_styles', 'h5pmods_alter_styles', 10, 3);
