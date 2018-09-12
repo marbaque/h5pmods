@@ -9,7 +9,7 @@ html.h5p-iframe, html.h5p-iframe div {
 .h5p-essay .h5p-essay-solution-sample {
 	background-image: url(../../themes/flexieduca/img/avatar_feedback.png);
 	background-image: url(../../themes/flexieduca/img/avatar_feedback.svg);
-	background-position: 10px center;
+	background-position: 10px 10px;
 	background-size: 80px auto;
 	background-repeat: no-repeat;
 	padding-left: 90px;
